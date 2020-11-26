@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+  }
+  .topnav {
+    position: relative; 
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    
+   
+  }
+
+  .topnav .content {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+
+
+  
+ /* Some padding */
+  }
+  .topnav .img_bottom {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    text-align: center;
+
+ /* Some padding */
+  }
+  .topnav .img_bottom h3{
+    color: white;
+  }
+  .filter_sort button{
+    border:white;
+    color: white;;
+    background-color: #002147;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: translateY(-10px);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 17px;
+    padding: 10px;
+    display:inline-block;
+  }
+  
+  /* Style the search field */
+  form.book_search input[type=text] {
+    padding: 10px;
+    right:10px;
+    font-size: 17px;
+    border: 2px solid grey;
+    float: left;
+    width: 20%;
+    background: #f1f1f1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translateY(+10px);
+    
+  }
+  
+  /* Style the submit button */
+  #search{
+    float: left;
+    width: 3%;
+    padding: 10px;
+    background: #002147;
+    color: white;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateX(+20px);
+    transform: translateY(10px);
+  }
+
+  .right_menu button{
+        float:right;
+        border: none; /* Remove borders */
+        background-color: #002147;
+        color: white; /* White text */
+        padding: 12px 16px ; /* Some padding */
+        font-size: 16px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        transform: translateX(-20px);
+      }
+      
+      /* Darker background on mouse-over */
+    
+  
+  .topnav button:hover {
+    background: #0b7dda;
+    }
+  #search:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.book_search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered h3{
+color:white;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5);
+border-color: black;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #002147;
+  min-width: 180px;
+  border: 1px solid yellowgreen;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:#0b7dda;
+color:white;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.dropdown1:hover .show {display:block;}
+.dropdown2:hover .show {display:block;}
+
+.btn_books {
+  border:transparent;
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+.back {
+  padding-bottom:100px;
+}
+
+.gallery_title h3{
+  text-align: center;
+  padding-top: 20px;
+  text-underline-position: inherit;
+  font-family: "Times New Roman", Times, sansserif;
+  color: #002147;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
+
+.gallery_box {
+  position: relative;
+  margin: 5px;
+  width: 70%;
+  overflow: scroll;
+  white-space: nowrap;
+  height: 300px;
+  left: 18%;
+  right: 5%;
+  box-shadow: 10px 15px #002147;
+
+}
+
+
+.gallery {
+  display: inline-block;
+  margin: 5px;
+  white-space: normal;
+  border: 1px solid;
+  width: 200px;
+  list-style-type: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  
+} 
+
+.gallery:hover {
+  border: 1px solid #777;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5);
+  animation-delay: 0.3s;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink .button1.active{
+  color: red;
+
+}
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+.tablink button {width: 50%;}
+
+.container_form {
+  padding: 16px;
+
+}
+
+.container_form label{
+  color: #000;
+}
+/* Full-width input fields */
+.container_form input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.container_form input[type=number]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.submitbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.submitbtn:hover {
+  opacity: 1;
+}
+
+
+
